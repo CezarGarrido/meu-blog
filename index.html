@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cezar Garrido Britez / Blog</title>
     <style>
     .footer {
@@ -49,13 +50,75 @@
     .posts-item-time {
         font-size: 12px;
     }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+    }
+
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .header a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .header a.active {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .header-right {
+        float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .header-right {
+            float: none;
+        }
+    }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>por Cezar Garrido Britez</h1>
-    </header>
+    <div class="header">
+        <a href="#default" class="logo">Cezar-Garrido blog-dev</a>
+        <div class="header-right">
+            <a class="active" href="#inicio">Início</a>
+            <a href="#contato">Contato</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+    </div>
     <div class="posts">
         <div id="post-1" class="posts-item">
             <div class="posts-item-title">
@@ -81,7 +144,7 @@
             <div class="posts-item-content">
                 <p>A primeira postagem aqui foi uma breve introdução ao blog,
                     porém eu não havia definido quais seriam os conteúdos a serem apresentados, então
-                    estive pensando no assunto e no fato de que devo treinar meu português para escrever algo relevante e de qualidade. Nada mais justo então abordar alguns erros recorrentes entre os falantes de língua portuguesa.<br/>
+                    estive pensando no assunto e no fato de que devo treinar meu português para escrever algo relevante e de qualidade. Nada mais justo então abordar alguns erros recorrentes entre os falantes de língua portuguesa.<br />
                     Me acompanhem!
                     <ol>
                         <li>"Mal" e "mau".<br />
@@ -93,8 +156,8 @@
                             Mal é usado principalmente para referenciar problemas, tristezas, ou algo de má qualidade. Ex:<br />
                             Dormi mal essa noite.<br />
                             Essa tristeza é um mal que pode ser muito grave.<br />
-                            Mau é um adjetivo e siginfica "ruim". É antônimo de bom, faz o plural com maus e o feminino é má. <br/>
-                            Ex: Aquele é um homem mau.<br/>
+                            Mau é um adjetivo e siginfica "ruim". É antônimo de bom, faz o plural com maus e o feminino é má. <br />
+                            Ex: Aquele é um homem mau.<br />
                         </li>
                     </ol>
                     Obrigado.
